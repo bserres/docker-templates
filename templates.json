@@ -3,6 +3,108 @@
   "templates": [
     {
       "type": 1,
+      "title": "Cubejs-iliad3",
+      "description": "Une instance de Cubejs configurée",
+      "categories": ["iliad3", "datascience"],
+      "platform": "linux",
+      "logo": "https://global.discourse-cdn.com/standard11/uploads/cube1/original/1X/ca91c5cb7fcd1ed61045ee1022ac3555b0d4509e.png",
+      "image": "bserres/cube:latest",
+      "ports": ["3000/tcp", "4000/tcp", "5432/tcp"],
+      "volumes": [
+        {
+          "container": "/cube/conf"
+        }
+      ],
+      "env": [
+         {
+          "name": "CUBEJS_API_SECRET",
+          "default": "secret",
+          "preset": true
+         },
+         {
+          "name": "CUBEJS_DB_HOST",
+          "default": "",
+          "preset": false
+         },
+         {
+            "name": "CUBEJS_DB_NAME",
+            "default": "",
+            "preset": false
+         },
+         {
+            "name": "CUBEJS_DB_PASS",
+            "default": "",
+            "preset": false
+         },
+         {
+            "name": "CUBEJS_DB_PORT",
+            "default": "5901",
+            "preset": false
+         },
+         {
+            "name": "CUBEJS_PG_SQL_PORT",
+            "default": "5432",
+            "preset": true
+         },
+         {
+            "name": "CUBEJS_DB_TYPE",
+            "default": "postgresql",
+            "preset": true
+         },
+         {
+            "name": "CUBEJS_DB_USER",
+            "default": "postgresql",
+            "preset": true
+         },
+         {
+            "name": "CUBEJS_DEV_MODE",
+            "default": "true",
+            "preset": true
+         },
+         {
+            "name": "CUBEJS_DOCKER_IMAGE_TAG",
+            "default": "latest",
+            "preset": true
+         },
+         {
+            "name": "CUBEJS_DOCKER_IMAGE_VERSION",
+            "default": "v0.31.22",
+            "preset": true
+         },
+         {
+            "name": "NODE_ENV",
+            "default": "dev",
+            "preset": true
+         },
+         {
+            "name": "NODE_PATH",
+            "default": "/cube/conf/node_modules:/cube/node_modules",
+            "preset": true
+         },
+         {
+            "name": "NODE_VERSION",
+            "default": "14.20.0",
+            "preset": true
+         },
+         {
+            "name": "PATH",
+            "default": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "preset": true
+         },
+         {
+            "name": "TERM",
+            "default": "rxvt-unicode",
+            "preset": true
+         },
+         {
+            "name": "YARN_VERSION",
+            "default": "1.22.19",
+            "preset": true
+         }
+      ]
+    },
+    {
+      "type": 1,
       "title": "Registry",
       "description": "Docker image registry",
       "categories": ["docker"],
