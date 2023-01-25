@@ -23,25 +23,25 @@
          },
          {
           "name": "CUBEJS_DB_HOST",
-          "label": "Postgres Host/IP"
+          "label": "Postgres Host/IP",
           "default": "",
           "preset": false
          },
          {
             "name": "CUBEJS_DB_NAME",
-            "label": "Postgres DB Name"
+            "label": "Postgres DB Name",
             "default": "",
             "preset": false
          },
          {
             "name": "CUBEJS_DB_PASS",
-            "label": "Postgres DB Password"
+            "label": "Postgres DB Password",
             "default": "",
             "preset": false
          },
          {
             "name": "CUBEJS_DB_PORT",
-            "label": "Postgres DB Port"
+            "label": "Postgres DB Port",
             "default": "5901",
             "preset": false
          },
