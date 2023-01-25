@@ -4,7 +4,7 @@
     {
       "type": 1,
       "title": "Cubejs-iliad3",
-      "description": "Une instance de Cubejs configurée",
+      "description": "Une instance de Cubejs configurée pour un acces à une base de données Postgres externe.",
       "categories": ["iliad3", "datascience"],
       "platform": "linux",
       "logo": "https://global.discourse-cdn.com/standard11/uploads/cube1/original/1X/ca91c5cb7fcd1ed61045ee1022ac3555b0d4509e.png",
@@ -23,21 +23,25 @@
          },
          {
           "name": "CUBEJS_DB_HOST",
+          "label": "Postgres Host/IP"
           "default": "",
           "preset": false
          },
          {
             "name": "CUBEJS_DB_NAME",
+            "label": "Postgres DB Name"
             "default": "",
             "preset": false
          },
          {
             "name": "CUBEJS_DB_PASS",
+            "label": "Postgres DB Password"
             "default": "",
             "preset": false
          },
          {
             "name": "CUBEJS_DB_PORT",
+            "label": "Postgres DB Port"
             "default": "5901",
             "preset": false
          },
