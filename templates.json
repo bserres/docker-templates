@@ -52,12 +52,12 @@
          },
          {
             "name": "CUBEJS_DB_TYPE",
-            "default": "postgresql",
+            "default": "postgres",
             "preset": true
          },
          {
             "name": "CUBEJS_DB_USER",
-            "default": "postgresql",
+            "default": "postgres",
             "preset": true
          },
          {
